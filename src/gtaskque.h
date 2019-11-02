@@ -119,7 +119,7 @@ class gtaskque {
                 keywords::auto_flush = true,
                 boost::log::keywords::format = ">> %Message%");
         logger::add_file_log(
-                keywords::target = "logs/", keywords::file_name = "GTaskQue_%y%m%d_%3N.log",
+                keywords::target = "logs/", keywords::file_name = "gtaskque_%y%m%d_%3N.log",
                 keywords::rotation_size = 10 * 1024 * 1024, // rolling with every 10MB
 //                keywords::time_based_rotation = sinks::file::rotation_at_time_point(0, 0, 0), //12시마다 rotate
                 keywords::auto_flush = true,
